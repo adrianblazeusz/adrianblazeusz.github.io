@@ -936,21 +936,26 @@ header .navbar ul li a:hover {
     display: none; /* Hide arrows on mobile */
   }
 
+  /* Add padding within the content box */
   .experience .content {
-    padding: 1rem 1rem 1rem 3rem; /* Added left padding to create space */
+    padding: 1.5rem; /* Uniform padding around content */
+    border-radius: 6px; /* Optional: rounded corners for aesthetics */
+    background-color: #53ceff; /* Ensure background color stands out */
   }
 
   .experience .content .tag {
     font-size: 1.2rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .experience .content .desc h3 {
     font-size: 1.2rem;
+    margin-top: 0.5rem;
   }
 
   .experience .content .desc p {
     font-size: 1rem;
+    margin-top: 0.3rem;
   }
 }
 /* experience media queries ends */
