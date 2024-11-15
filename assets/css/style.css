@@ -937,7 +937,7 @@ header .navbar ul li a:hover {
   }
 
   .experience .content {
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 3rem; /* Added left padding to create space */
   }
 
   .experience .content .tag {
