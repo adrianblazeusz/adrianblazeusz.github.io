@@ -756,7 +756,7 @@ header .navbar ul li a:hover {
 }
 /* work section ends */
 
-/* experience section starts */
+/* Experience Section - Desktop */
 .experience .timeline {
   position: relative;
   max-width: 1200px;
@@ -868,7 +868,8 @@ header .navbar ul li a:hover {
 .experience .content .desc p {
   font-size: 1.2rem;
 }
-/* view all button */
+
+/* View all button styling */
 .morebtn {
   display: flex;
   justify-content: center;
@@ -906,20 +907,20 @@ header .navbar ul li a:hover {
   .experience {
     min-height: 80vh;
   }
-  
+
   .experience .timeline {
     margin-top: 2rem;
+    padding-top: 0;
   }
 
   .experience .timeline::after {
-    left: 31px;
+    left: 25px;
   }
 
   .experience .container {
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .experience .container.left,
@@ -932,15 +933,7 @@ header .navbar ul li a:hover {
   }
 
   .experience .container::before {
-    left: 40px;
-    border: medium solid #f68c09;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #f68c09 transparent transparent;
-  }
-
-  .experience .left::before,
-  .experience .right::before {
-    display: none; /* Remove arrows on mobile */
+    display: none; /* Hide arrows on mobile */
   }
 
   .experience .content {
@@ -950,7 +943,6 @@ header .navbar ul li a:hover {
   .experience .content .tag {
     font-size: 1.2rem;
     padding-top: 1rem;
-    padding-left: 1rem;
   }
 
   .experience .content .desc h3 {
