@@ -889,39 +889,50 @@ header .navbar ul li a:hover {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  .experience {
-    min-height: 80vh;
-  }
+@media screen and (max-width: 768px) {
+  /* Adjust the general layout of the timeline for smaller screens */
   .experience .timeline {
-    margin-top: 2rem;
+    padding-top: 50px; /* Reduced top padding */
+    padding-bottom: 50px; /* Reduced bottom padding */
   }
   .experience .timeline::after {
-    left: 31px;
+    left: 10px; /* Move the line to the left for better visibility */
+    margin-left: 0; /* No need to center the line */
   }
+  
+  /* Adjust each container's styling */
   .experience .container {
-    width: 50%;
-    padding-left: 8rem;
-    padding-right: 2rem;
+    width: 100%; /* Make each container take full width */
+    padding: 10px; /* Reduce padding */
+    margin-bottom: 20px; /* Add some space between entries */
   }
+  
+  /* Correct the position of icons and arrows */
   .experience .container::after {
-    font-size: 2.2rem;
+    left: 0; /* Position the circle at the start of the entry */
+    top: 10px; /* Adjust vertical position */
   }
-  .experience .container::before {
-    left: 61px;
-    border-width: 10px 10px 10px 0;
+  .experience .left::before,
+  .experience .right::before {
+    display: none; /* Hide arrows in a compact view */
   }
-  .experience .left::after {
-    left: 15px;
+  
+  /* Style adjustments for content */
+  .experience .content {
+    border-radius: 5px; /* Softer corners */
   }
-  .experience .right::after {
-    left: 15px;
+  
+  /* Tag adjustments */
+  .experience .content .tag h2 {
+    font-size: 1rem; /* Smaller font size for tags */
   }
-  .experience .right {
-    left: 0%;
+  
+  /* Description adjustments */
+  .experience .content .desc h3 {
+    font-size: 1rem; /* Smaller title font size */
   }
-  .morebtn {
-    margin-top: 3rem;
+  .experience .content .desc p {
+    font-size: 0.8rem; /* Smaller paragraph text */
   }
 }
 /* experience media queries ends */
