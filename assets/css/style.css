@@ -889,50 +889,41 @@ header .navbar ul li a:hover {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 768px) {
-  /* Adjust the general layout of the timeline for smaller screens */
+@media screen and (max-width: 600px) {
+  .experience {
+    min-height: 80vh;
+  }
   .experience .timeline {
-    padding-top: 50px; /* Reduced top padding */
-    padding-bottom: 50px; /* Reduced bottom padding */
+    margin-top: 2rem;
   }
   .experience .timeline::after {
-    left: 10px; /* Move the line to the left for better visibility */
-    margin-left: 0; /* No need to center the line */
+    left: 31px;
   }
-  
-  /* Adjust each container's styling */
   .experience .container {
-    width: 100%; /* Make each container take full width */
-    padding: 10px; /* Reduce padding */
-    margin-bottom: 20px; /* Add some space between entries */
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 2rem;
   }
-  
-  /* Correct the position of icons and arrows */
   .experience .container::after {
-    left: 0; /* Position the circle at the start of the entry */
-    top: 10px; /* Adjust vertical position */
+    font-size: 2.2rem;
   }
-  .experience .left::before,
-  .experience .right::before {
-    display: none; /* Hide arrows in a compact view */
+  .experience .container::before {
+    left: 61px;
+    border: medium solid #f68c09;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f68c09 transparent transparent;
   }
-  
-  /* Style adjustments for content */
-  .experience .content {
-    border-radius: 5px; /* Softer corners */
+  .experience .left::after {
+    left: 15px;
   }
-  
-  /* Tag adjustments */
-  .experience .content .tag h2 {
-    font-size: 1rem; /* Smaller font size for tags */
+  .experience .right::after {
+    left: 15px;
   }
-  
-  /* Description adjustments */
-  .experience .content .desc h3 {
-    font-size: 1rem; /* Smaller title font size */
+  .experience .right {
+    left: 0%;
   }
-  .experience .content .desc p {
-    font-size: 0.8rem; /* Smaller paragraph text */
+  .morebtn {
+    margin-top: 3rem;
   }
 }
 /* experience media queries ends */
