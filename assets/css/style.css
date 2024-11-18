@@ -52,7 +52,6 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   height: 100%;
   width: 100%;
-  padding-left: 15px;
 }
 .loader-container.fade-out {
   top: -120%;
@@ -581,6 +580,7 @@ header .navbar ul li a:hover {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin-left: 2rem;
   flex-wrap: wrap;
   flex: 1 1 70rem;
 }
@@ -601,7 +601,7 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   color: rgb(34, 109, 0);
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 2rem; /* Dodano odstęp z lewej strony */
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
@@ -624,6 +624,8 @@ header .navbar ul li a:hover {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-left: 1rem; /* Zmniejszono margines dla małych ekranów */
+
     flex-wrap: wrap;
     flex: 0;
   }
@@ -632,6 +634,9 @@ header .navbar ul li a:hover {
     margin-left: 1rem;
     margin-right: 1rem;
     flex-wrap: wrap;
+  }
+  .education h4 {
+    margin: 1rem; /* Mniejszy margines dla lepszego dopasowania */
   }
 }
 /* education media queries ends*/
@@ -673,11 +678,10 @@ header .navbar ul li a:hover {
   width: 100%;
   position: absolute;
   top: 85%;
-  left: 15px;
+  left: 0;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
-  
 }
 .work .box-container .box .content .tag {
   display: flex;
@@ -686,7 +690,7 @@ header .navbar ul li a:hover {
   align-items: center;
   height: 4.5rem;
   width: 100%;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   background: #53ceff;
 }
 .work .box-container .box .content .tag h3 {
