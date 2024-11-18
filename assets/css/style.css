@@ -52,6 +52,7 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   height: 100%;
   width: 100%;
+  padding-left: 15px;
 }
 .loader-container.fade-out {
   top: -120%;
@@ -672,10 +673,11 @@ header .navbar ul li a:hover {
   width: 100%;
   position: absolute;
   top: 85%;
-  left: 0;
+  left: 15px;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
+  
 }
 .work .box-container .box .content .tag {
   display: flex;
@@ -684,7 +686,7 @@ header .navbar ul li a:hover {
   align-items: center;
   height: 4.5rem;
   width: 100%;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   background: #53ceff;
 }
 .work .box-container .box .content .tag h3 {
