@@ -580,7 +580,6 @@ header .navbar ul li a:hover {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  margin-left: 2rem;
   flex-wrap: wrap;
   flex: 1 1 70rem;
 }
@@ -601,7 +600,7 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   color: rgb(34, 109, 0);
   text-align: left;
-  margin: 1rem 2rem; /* Dodano odstęp z lewej strony */
+  margin: 1rem;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
@@ -624,8 +623,6 @@ header .navbar ul li a:hover {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-left: 1rem; /* Zmniejszono margines dla małych ekranów */
-
     flex-wrap: wrap;
     flex: 0;
   }
@@ -634,9 +631,6 @@ header .navbar ul li a:hover {
     margin-left: 1rem;
     margin-right: 1rem;
     flex-wrap: wrap;
-  }
-  .education h4 {
-    margin: 1rem; /* Mniejszy margines dla lepszego dopasowania */
   }
 }
 /* education media queries ends*/
@@ -912,6 +906,10 @@ header .navbar ul li a:hover {
 @media screen and (max-width: 600px) {
   .experience {
     min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .experience .timeline {
@@ -924,9 +922,10 @@ header .navbar ul li a:hover {
   }
 
   .experience .container {
-    width: 100%;
-    padding: 0 1.5rem;
+    width: 90%;
+    padding: 0 1rem;
     margin-bottom: 2rem;
+    text-align: center; /* Wyśrodkowanie tekstu */
   }
 
   .experience .container.left,
@@ -947,6 +946,8 @@ header .navbar ul li a:hover {
     padding: 1.5rem; /* Uniform padding around content */
     border-radius: 6px; /* Optional: rounded corners for aesthetics */
     background-color: #53ceff; /* Ensure background color stands out */
+    text-align: center; /* Wyśrodkowanie tekstu */
+
   }
 
   .experience .content .tag {
